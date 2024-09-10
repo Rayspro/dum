@@ -1,0 +1,46 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:security/recommended",
+    "plugin:node/recommended",
+    "airbnb-base"
+  ],
+  "plugins": ["security", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "import/extensions": "off",
+    "import/no-dynamic-require": "off",
+    "global-require": "off",
+    "linebreak-style": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "security/detect-object-injection": "off",
+    "security/detect-non-literal-fs-filename": "off",
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "ignore", ":": "ignore" } }],
+    "no-useless-catch": "off",
+    "func-names": "off",
+    "arrow-body-style": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "ignore",
+        "objects": "ignore",
+        "imports": "ignore",
+        "exports": "ignore",
+        "functions": "ignore"
+      }
+    ],
+    "object-curly-newline": ["error", { "multiline": true, "consistent": true }],
+    "no-return-assign": "off",
+    "implicit-arrow-linebreak": "off",
+    "prefer-const": "error"
+  }
+}

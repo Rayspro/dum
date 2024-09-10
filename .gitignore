@@ -1,0 +1,18 @@
+# Dependencies
+node_modules
+
+# yarn error logs
+yarn-error.log
+
+# Environment varibales
+.env*
+!.env*.example
+
+# All package json
+package-lock.json
+
+# logs
+/src/logs/*.log
+/src/logs
+/public/uploads
+/src/config/google
